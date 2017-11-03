@@ -1,8 +1,6 @@
-
-<?php
-get_header(); 
-the_post(); 
-the_content(); ?>
-
+<?php get_header(); ?>
+  <main>
+    <h1>Oh yea! Interesting</h1>
+  </main>
 
 <?php get_footer(); ?>

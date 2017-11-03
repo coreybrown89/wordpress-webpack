@@ -76,6 +76,7 @@
 (function ($) {
 	$(document).ready(function () {
 		// what are you waiting for?
+		console.log('this is a testings');
 	});
 })(jQuery);
 

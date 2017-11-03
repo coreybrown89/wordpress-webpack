@@ -8,7 +8,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const config = {
 	entry: './resources/js/app.js',
 	output: {
-		filename: 'bundle.js',
+		filename: './js/bundle.js',
 		path: path.resolve(__dirname, 'public')
 	},
 	module: {
@@ -32,10 +32,9 @@ const config = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin('/css/app.css'),
+		new ExtractTextPlugin('../sass/app.scss'),
 		new BrowserSyncPlugin({
-			proxy: 'wordpack.dev',
-			port: 3000,
+			proxy: 'webpack.dev',
 			files: ['**/*.php'],
 			ghostMode: {
 				clicks: false,

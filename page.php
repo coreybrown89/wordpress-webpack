@@ -1,9 +1,5 @@
-<?php
+<?php get_header(); the_post(); ?>
 
-get_header(); ?>
+	<?php the_content(); ?>
 
-	<h1>Howdy</h1>
-
-<?php
-
-get_footer();
+<?php get_footer();
