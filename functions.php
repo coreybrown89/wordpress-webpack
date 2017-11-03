@@ -32,11 +32,11 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
  */
 function custom_theme_scripts() {
 	// css
-	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'custom-app-syles', get_template_directory_uri().'/public/css/app.min.css' );
+	
+	wp_enqueue_style( 'custom-app-syles', get_template_directory_uri().'/public/css/app.bundle.css' );
 
 	// js
-	wp_enqueue_script( 'main-js', get_template_directory_uri().'/public/js/bundle.js',
+	wp_enqueue_script( 'main-js', get_template_directory_uri().'/public/js/app.bundle.js',
 		array(
 			'jquery'
 		), false, true

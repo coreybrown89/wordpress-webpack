@@ -1,0 +1,17 @@
+main {
+	@include layout-flex($direction: column, $justify: center);
+	height: 100vh;
+	background-color: #222;
+
+	h1 {
+		color: #83d0fa;
+		text-align: center;
+		font-size: 2rem;
+		max-width: 50rem;
+	}
+
+	.logo {
+		width: 30rem;
+		margin: 4rem;
+	}
+}
