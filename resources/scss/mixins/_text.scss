@@ -1,0 +1,12 @@
+@mixin text-line($color, $margin: 0) {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin: 15px $margin;
+  background-color: $color;
+}
+
+@mixin text-shadow {
+  text-shadow: 7px 9px 14px rgba(92, 92, 92, 0.3);
+}

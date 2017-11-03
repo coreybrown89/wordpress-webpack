@@ -1,0 +1,25 @@
+@mixin levels($level: 0){
+
+    @if($level == 1){
+        $level: 10;
+    }
+
+    @if($level == 2){
+        $level: 20;
+    }
+
+    @if($level == 3){
+        $level: 30;
+    }
+
+    @if($level == 4){
+        $level: 40;
+    }
+
+    @if($level == 5){
+        $level: 50;
+    }
+
+    position: relative;
+    z-index: $level;
+}
